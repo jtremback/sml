@@ -25,7 +25,7 @@
  * Templating
  *
  * Usage:
- *  var hello = t("Hello, #{this.name || 'world'}!")
+ *  var hello = a.tmp("Hello, #{this.name || 'world'}!")
  *
  *  console.log( // => "Hello, Jed!"
  *    hello({name: "Jed"})
@@ -104,7 +104,7 @@ exports.store = function(
  *
  * Usage:
  *   var el = document.getElementyById('#container');
- *   b(el, 'click', function() {
+ *   a.bind(el, 'click', function() {
  *     console.log('clicked');
  *   });
  *
@@ -173,9 +173,9 @@ exports.el = function(
  * DOM selector
  *
  * Usage:
- *   $('div');
- *   $('#name');
- *   $('.name');
+ *   a.$('div');
+ *   a.$('#name');
+ *   a.$('.name');
  *
  *
  * Copyright (C) 2011 Jed Schmidt <http://jed.is> - WTFPL
